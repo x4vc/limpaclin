@@ -373,4 +373,8 @@ public class CadastrarLaudoController implements Initializable {
         txtTotal.setText(strTotal);
     
     }
+    @FXML
+    private void handleButtonImprimirLaudo(ActionEvent event) throws IOException {
+        
+    }
 }

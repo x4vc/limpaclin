@@ -99,7 +99,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="btImprimirAtendimento" layoutX="196.0" layoutY="553.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Imprimir">
+      <Button fx:id="btImprimirAtendimento" layoutX="196.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleButtonImprimirLaudo" prefHeight="25.0" prefWidth="107.0" text="Imprimir">
          <graphic>
             <ImageView>
                <image>

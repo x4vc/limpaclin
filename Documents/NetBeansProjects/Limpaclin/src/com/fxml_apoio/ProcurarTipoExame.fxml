@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxml_apoio.ProcurarTipoExameController">
+   <children>
+      <Label fx:id="LblTipoExamePesquisar" layoutX="14.0" layoutY="28.0" text="Nome Tipo Exame:" AnchorPane.leftAnchor="5.0" />
+      <TextField fx:id="txtProcurarTipoExame" layoutX="126.0" layoutY="24.0" prefHeight="25.0" prefWidth="237.0" />
+      <Button fx:id="btProcurarTipoExameApoio" layoutX="438.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleButtonProcurarTipoExame" prefHeight="25.0" prefWidth="91.0" text="Procurar" AnchorPane.rightAnchor="34.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../../resources/preview_16x16.gif" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TableView fx:id="tv_TipoExame" layoutX="14.0" layoutY="65.0" prefHeight="297.0" prefWidth="367.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn fx:id="TblClId" prefWidth="36.0" text="Id" />
+          <TableColumn fx:id="TblClTipoExame" prefWidth="237.0" text="Nome Tipo Exame" />
+            <TableColumn fx:id="TblClFator" minWidth="0.0" prefWidth="50.0" text="Fator" />
+            <TableColumn fx:id="TblClAtivo" prefWidth="38.0" text="Ativo" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelMessage" layoutX="14.0" layoutY="49.0" text="Label" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="45.0" />
+      <Button fx:id="btSelecionarTipoExame" layoutX="472.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleSelecionar" prefHeight="25.0" prefWidth="91.0" text="Selecionar" AnchorPane.rightAnchor="34.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../../resources/ok_16x16.gif" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

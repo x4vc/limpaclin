@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MainWindowController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Contas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Contas a Pagar" />
+                  <MenuItem mnemonicParsing="false" text="Contas a Receber" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Laudos">
+            <items>
+              <MenuItem fx:id="MenuItemCadastrarLaudo" mnemonicParsing="false" onAction="#handleMenuItemCadastrarLaudo" text="Cadastrar Laudos" />
+                  <MenuItem mnemonicParsing="false" text="Consultar Laudos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tabelas de Apoio">
+            <items>
+                  <MenuItem fx:id="MenuItemTipoExame" mnemonicParsing="false" onAction="#handleMenuItemTipoExameAction" text="Tabela Tipo Exame" />
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

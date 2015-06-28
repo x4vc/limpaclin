@@ -375,6 +375,11 @@ public class CadastrarLaudoController implements Initializable {
     }
     @FXML
     private void handleButtonImprimirLaudo(ActionEvent event) throws IOException {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Laudo");
+            alert.setHeaderText("Impressão de Laudo");
+            alert.setContentText("Método para impressão de Laudo");
+            alert.showAndWait();
         
     }
 }

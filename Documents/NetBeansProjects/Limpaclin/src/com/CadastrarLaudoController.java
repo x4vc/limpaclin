@@ -56,6 +56,8 @@ public class CadastrarLaudoController implements Initializable {
     @FXML
     private Button btExcluirExameSolicitado;
     @FXML
+    private Button btImprimirAtendimento;
+    @FXML
     private TextField txtId;
     @FXML
     private CheckBox cBoxAtivoTipoExame;

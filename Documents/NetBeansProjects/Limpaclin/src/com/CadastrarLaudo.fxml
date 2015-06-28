@@ -72,7 +72,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button layoutX="188.0" layoutY="553.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Sair">
+      <Button layoutX="330.0" layoutY="553.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Sair">
          <graphic>
             <ImageView>
                <image>
@@ -95,6 +95,15 @@
             <ImageView>
                <image>
                   <Image url="@../resources/minus_red.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btImprimirAtendimento" layoutX="196.0" layoutY="553.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Imprimir">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../resources/print_16x16.gif" />
                </image>
             </ImageView>
          </graphic>

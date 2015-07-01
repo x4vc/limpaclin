@@ -6,6 +6,7 @@
 package com;
 
 import com.fxml_apoio.ProcurarTipoExameController;
+import com.itextpdf.text.Document;
 import com.tableview.TblViewTipoExame;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,9 +19,7 @@ import javafx.scene.control.Button;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
@@ -35,6 +34,10 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import java.io.FileOutputStream;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.util.Imprimir;
+
 
 
 
@@ -95,6 +98,9 @@ public class CadastrarLaudoController implements Initializable {
     private Double d;
     private BigDecimal bd;
     private Integer nItens;
+    
+    private static String FILE = "Laudo.pdf";
+    private static String PASTA;
     
     
     /**
@@ -380,6 +386,28 @@ public class CadastrarLaudoController implements Initializable {
             alert.setHeaderText("Impressão de Laudo");
             alert.setContentText("Método para impressão de Laudo");
             alert.showAndWait();
+            
+        
+        
+  
+        try {
+            //Imprimir imprimir = new Imprimir();
+            PASTA = System.getProperty("user.home") + "\\Temp\\";
+            com.util.Imprimir.createDirectoryFileExists(PASTA, FILE);
+            
+            Document document = new Document();
+            PdfWriter.getInstance(document, new FileOutputStream(PASTA + FILE));
+            document.open();
+            
+            com.util.Imprimir.addTitlePage(document);
+            com.util.Imprimir.addContent(document);
+            
+            //addTitlePage(document);
+            //addContent(document);
+            document.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         
     }
 }

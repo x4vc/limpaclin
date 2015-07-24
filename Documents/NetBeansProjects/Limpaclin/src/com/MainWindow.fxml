@@ -6,7 +6,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MainWindowController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
@@ -26,6 +25,7 @@
           <Menu mnemonicParsing="false" text="Tabelas de Apoio">
             <items>
                   <MenuItem fx:id="MenuItemTipoExame" mnemonicParsing="false" onAction="#handleMenuItemTipoExameAction" text="Tabela Tipo Exame" />
+                  <MenuItem fx:id="MenuItemPaciente" mnemonicParsing="false" onAction="#handleMenuItemPacientesAction" text="Tabela Pacientes" />
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>

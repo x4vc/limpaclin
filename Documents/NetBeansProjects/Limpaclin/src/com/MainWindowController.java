@@ -37,6 +37,9 @@ public class MainWindowController implements Initializable {
     @FXML
     MenuItem MenuItemTipoExame;
     
+    @FXML
+    MenuItem MenuItemPaciente;
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -68,6 +71,21 @@ public class MainWindowController implements Initializable {
         Scene scene = new Scene(parent);
         Stage stage = new Stage();
         stage.setTitle("Tipo de Exame");
+        stage.getIcons().add(new Image("/resources/lab_24x24.png"));
+        stage.setScene(scene);
+        stage.show();
+        
+    }
+     @FXML
+    private void handleMenuItemPacientesAction(ActionEvent event) throws IOException{
+        //Mostramos uma nova janela chamada Tipo de Exame
+        Parent parent;
+
+        parent = FXMLLoader.load(getClass().getResource("/com/Paciente.fxml"));
+
+        Scene scene = new Scene(parent);
+        Stage stage = new Stage();
+        stage.setTitle("Paciente");
         stage.getIcons().add(new Image("/resources/lab_24x24.png"));
         stage.setScene(scene);
         stage.show();

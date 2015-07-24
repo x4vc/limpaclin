@@ -19,13 +19,13 @@
         </columns>
       </TableView>
       <Label layoutX="29.0" layoutY="99.0" text="Nome do paciente:" />
-      <Label layoutX="29.0" layoutY="131.0" text="Data nascimento:" />
-      <Label layoutX="234.0" layoutY="131.0" text="Sexo:" />
+      <Label layoutX="266.0" layoutY="135.0" text="Data nascimento:" />
+      <Label layoutX="471.0" layoutY="135.0" text="Sexo:" />
       <Label layoutX="29.0" layoutY="31.0" text="Código Atendimento Laboratorial:" />
       <TextField layoutX="213.0" layoutY="27.0" />
       <TextField layoutX="136.0" layoutY="95.0" prefHeight="25.0" prefWidth="224.0" />
-      <TextField editable="false" layoutX="130.0" layoutY="127.0" prefHeight="25.0" prefWidth="92.0" />
-      <TextField editable="false" layoutX="281.0" layoutY="127.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField editable="false" layoutX="367.0" layoutY="131.0" prefHeight="25.0" prefWidth="92.0" />
+      <TextField editable="false" layoutX="518.0" layoutY="131.0" prefHeight="25.0" prefWidth="31.0" />
       <Button layoutX="400.0" layoutY="95.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" text="Procurar paciente">
          <graphic>
             <ImageView>
@@ -108,5 +108,9 @@
             </ImageView>
          </graphic>
       </Button>
+      <Label layoutX="38.0" layoutY="134.0" text="ID:" />
+      <Label layoutX="100.0" layoutY="135.0" text="RG:" />
+      <TextField layoutX="57.0" layoutY="131.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField layoutX="122.0" layoutY="131.0" prefHeight="25.0" prefWidth="125.0" />
    </children>
 </AnchorPane>

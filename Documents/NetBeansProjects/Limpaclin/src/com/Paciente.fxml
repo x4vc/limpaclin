@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.PacienteController">
+   <children>
+      <SplitPane dividerPositions="0.535175879396985" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="210.0" prefWidth="598.0">
+               <children>
+                  <Button fx:id="btProcurarPaciente" layoutX="477.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonProcurarPaciente" text="Procurar">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/preview_16x16.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TableView fx:id="tv_Paciente" layoutX="51.0" layoutY="57.0" prefHeight="127.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="TblClId" prefWidth="39.0" text="Id" />
+                        <TableColumn fx:id="TblClRG" prefWidth="131.0" text="RG" />
+                        <TableColumn fx:id="TblClNomePaciente" prefWidth="243.0" text="Nome do Paciente" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="txtProcurarPaciente" layoutX="131.0" layoutY="17.0" prefHeight="25.0" prefWidth="297.0" />
+                  <Label fx:id="LblNomePacientePesquisar" layoutX="14.0" layoutY="21.0" text="Nome do Paciente:" />
+               </children>
+            </AnchorPane>
+          <AnchorPane prefHeight="57.0" prefWidth="420.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" text="Id:" />
+                  <Label layoutX="102.0" layoutY="14.0" text="Nome completo:" />
+                  <Label layoutX="22.0" layoutY="47.0" text="RG:" />
+                  <Label layoutX="157.0" layoutY="47.0" text="Data nascimento:" />
+                  <Button fx:id="btSalvar" layoutX="30.0" layoutY="91.0" mnemonicParsing="false" text="Salvar">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/ok_16x16.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btAtualizar" layoutX="105.0" layoutY="91.0" mnemonicParsing="false" text="Atualizar">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/db_comit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btCancelar" layoutX="203.0" layoutY="91.0" mnemonicParsing="false" text="Cancelar">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/error_16x16.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btAddPaciente" layoutX="30.0" layoutY="129.0" mnemonicParsing="false" text="Novo Registro">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/database-add-16x16.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btUpdatePaciente" layoutX="157.0" layoutY="129.0" mnemonicParsing="false" text="Atualizar Registro">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/db_comit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btFecharPaciente" layoutX="299.0" layoutY="129.0" mnemonicParsing="false" text="Sair">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../resources/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="380.0" layoutY="47.0" text="CPF:" />
+                  <TextField fx:id="txtId" layoutX="43.0" layoutY="10.0" prefHeight="25.0" prefWidth="31.0" />
+                  <TextField fx:id="txtNomePaciente" layoutX="211.0" layoutY="10.0" prefHeight="25.0" prefWidth="349.0" />
+                  <TextField fx:id="txtRG" layoutX="54.0" layoutY="43.0" prefHeight="25.0" prefWidth="92.0" />
+                  <TextField fx:id="txtCPF" layoutX="411.0" layoutY="43.0" />
+                  <DatePicker fx:id="dtNascimento" layoutX="257.0" layoutY="43.0" prefHeight="25.0" prefWidth="112.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
